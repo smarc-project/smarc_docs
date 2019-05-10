@@ -16,6 +16,20 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+import os
+import urllib
+
+external_urls = {"smarc_docs": "https://raw.githubusercontent.com/smarc-project/smarc_docs/master/README.md",
+                 "uavcan_ros_bridge": "https://raw.githubusercontent.com/smarc-project/uavcan_ros_bridge/master/README.md",
+                 "smarc_simulations": "https://raw.githubusercontent.com/smarc-project/smarc_simulations/master/README.md",
+                 "rosinstall": "https://raw.githubusercontent.com/smarc-project/rosinstall/master/README.md",
+                 "bathymetric_slam": "https://raw.githubusercontent.com/smarc-project/bathymetric_slam/master/README.md",
+                 "roslaunch_monitor": "https://raw.githubusercontent.com/smarc-project/roslaunch_monitor/master/README.md"}
+
+if not os.path.exists("external"):
+    os.makedirs("external")
+for filename, url in external_urls.items():
+    urllib.urlretrieve(url, os.path.join("external", filename+".md"))
 
 # -- Project information -----------------------------------------------------
 
@@ -44,6 +58,7 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
     'sphinx.ext.autosummary',
+    'm2r'
 ]
 
 autosummary_generate = True
@@ -54,8 +69,8 @@ templates_path = ['_templates']
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
-# source_suffix = ['.rst', '.md']
-source_suffix = '.rst'
+source_suffix = ['.rst', '.md']
+#source_suffix = '.rst'
 
 # The master toctree document.
 master_doc = 'index'
