@@ -5,7 +5,7 @@ Documentation for the SMaRC project software repositories
 
 ### Dependencies
 
-Run `sudo pip install sphinx sphinx_rtd_theme` to get the necessary dependencies.
+Run `sudo pip install sphinx sphinx_rtd_theme m2r` to get the necessary dependencies.
 
 ### Commands
 
