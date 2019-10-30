@@ -24,7 +24,7 @@ external_urls = {"smarc_docs": "https://raw.githubusercontent.com/smarc-project/
                  "smarc_simulations": "https://raw.githubusercontent.com/smarc-project/smarc_simulations/master/README.md",
                  "rosinstall": "https://raw.githubusercontent.com/smarc-project/rosinstall/master/README.md",
                  "bathymetric_slam": "https://raw.githubusercontent.com/smarc-project/bathymetric_slam/master/README.md",
-                 "roslaunch_monitor": "https://raw.githubusercontent.com/smarc-project/roslaunch_monitor/master/README.md"}
+                 "roslaunch_monitor": "https://raw.githubusercontent.com/nilsbore/roslaunch_monitor/master/README.md"}
 
 if not os.path.exists("external"):
     os.makedirs("external")
