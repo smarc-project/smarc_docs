@@ -19,12 +19,14 @@
 import os
 import urllib
 
-external_urls = {"smarc_docs": "https://raw.githubusercontent.com/smarc-project/smarc_docs/master/README.md",
+external_urls = {"rosinstall": "https://raw.githubusercontent.com/smarc-project/rosinstall/master/README.md",
+                 "smarc_docs": "https://raw.githubusercontent.com/smarc-project/smarc_docs/master/README.md",
                  "uavcan_ros_bridge": "https://raw.githubusercontent.com/smarc-project/uavcan_ros_bridge/master/README.md",
+                 "imc_ros_bridge": "https://raw.githubusercontent.com/smarc-project/imc_ros_bridge/master/README.md",
                  "smarc_simulations": "https://raw.githubusercontent.com/smarc-project/smarc_simulations/master/README.md",
-                 "rosinstall": "https://raw.githubusercontent.com/smarc-project/rosinstall/master/README.md",
                  "bathymetric_slam": "https://raw.githubusercontent.com/smarc-project/bathymetric_slam/master/README.md",
-                 "roslaunch_monitor": "https://raw.githubusercontent.com/nilsbore/roslaunch_monitor/master/README.md"}
+                 "roslaunch_monitor": "https://raw.githubusercontent.com/nilsbore/roslaunch_monitor/master/README.md",
+                 "roslaunch_monitor": "https://raw.githubusercontent.com/nilsbore/sam_stonefish_sim/master/README.md"}
 
 if not os.path.exists("external"):
     os.makedirs("external")
