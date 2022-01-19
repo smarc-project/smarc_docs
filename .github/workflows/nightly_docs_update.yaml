@@ -1,6 +1,6 @@
 name: Nightly Documents Update
 
-on:[push]
+on: [push]
   # schedule:
   # - cron: '40 13 * * *'
 
