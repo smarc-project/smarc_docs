@@ -2,7 +2,7 @@ name: Nightly Documents Update
 
 on: 
   schedule:
-   - cron: '12 14 * * *'
+    - cron: '15 14 * * *'
 
 jobs:
 
