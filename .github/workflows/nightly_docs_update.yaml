@@ -10,7 +10,11 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - name: Checkout Repository Content
-        uses: actions/checkout@v2 
+        uses: actions/checkout@v2
+        uses: actions/setup-python@v2
+        with:
+        python-version: '2.x' 
+        architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
       - name: Installl Dependencies
         run: pip install sphinx sphinx_rtd_theme m2r
       - name: Build Files
