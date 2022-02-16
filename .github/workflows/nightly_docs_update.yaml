@@ -1,6 +1,7 @@
 name: Nightly Documents Update
 
-on: 
+on:
+  push: 
   schedule:
     # schedule on nighly run at 00:00 local Swedish time (23:00 UTC)
     - cron: '0 23 * * *'
