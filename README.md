@@ -1,7 +1,7 @@
 smarc_docs
 ==========
 
-Documentation for the SMaRC project software repositories
+Documentation for the SMaRC project software repositories ;-)
 
 ## Generating the documentation
 

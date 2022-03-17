@@ -4,7 +4,7 @@ on:
   push: 
   schedule:
     # schedule on nighly run at 00:00 local Swedish time (23:00 UTC)
-    - cron: '0 23 * * *'
+    - cron: '01 23 * * *'
 
 jobs:
 
@@ -50,7 +50,7 @@ jobs:
       - name: Git Add & Commit
         run: |
           git add .
-          git commit -m "nightly update on `date +'%Y-%m-%d'`"
+          git commit -m "nightly or push update on `date +'%Y-%m-%d'`"
       - name: Add Remote & Force Push
         run: |
           git remote add origin git@github.com:smarc-project/smarc-project.github.io.git
