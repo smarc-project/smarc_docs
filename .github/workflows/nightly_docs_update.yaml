@@ -26,6 +26,11 @@ jobs:
         uses: webfactory/ssh-agent@v0.5.4
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: Init Git & Set User
+        run: |
+          git init
+          git config user.email "jenkinzhang@outlook.com"
+          git config user.name "halajun"
       - name: Git Add & Commit
         run: |
           git add html
