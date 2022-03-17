@@ -4,7 +4,7 @@ on:
   push: 
   schedule:
     # schedule on nighly run at 00:00 local Swedish time (23:00 UTC)
-    - cron: '01 23 * * *'
+    - cron: '02 23 * * *'
 
 jobs:
 
