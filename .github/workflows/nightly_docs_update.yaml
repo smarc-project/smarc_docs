@@ -37,8 +37,9 @@ jobs:
           git commit -m "nightly or push update on `date +'%Y-%m-%d'`"
       - name: Add Remote & Force Push
         run: |
+          git remote rm origin
           git remote add origin git@github.com:smarc-project/smarc-project.github.io.git
-          git push -u origin master --force
+          git push -f origin master
 
   
 
