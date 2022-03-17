@@ -1,4 +1,4 @@
-name: Nightly Documents Update
+name: Auto Documents Update
 
 on:
   push: 
@@ -22,14 +22,12 @@ jobs:
         run: pip install sphinx sphinx_rtd_theme m2r mistune==0.8.4
       - name: Build Files
         run: make html
-      - name: Cache Built Files
-        uses: actions/cache@v2
-        env:
-          cache-name: cache-built-files
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v3
         with:
-          # npm cache files are stored in `~/.npm` on Linux/macOS
-          path: ./html
-          key: ${{ runner.os }}-build-${{ env.cache-name }}
+          name: folder_html
+          path: html
+          retention-days: 1
 
   publish_html:
       needs: make_html
@@ -39,6 +37,11 @@ jobs:
         uses: webfactory/ssh-agent@v0.5.4
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: Download Artifacts from Job "make_html"
+        uses: actions/download-artifact@v3
+        with:
+          name: folder_html
+          path: ./
       - name: Init Git & Set User
         run: |
           git init
@@ -46,7 +49,7 @@ jobs:
           git config user.name "halajun"
       - name: Git Add & Commit
         run: |
-          git add ./html
+          git add .
           git commit -m "nightly or push update on `date +'%Y-%m-%d'`"
       - name: Add Remote & Force Push
         run: |
