@@ -1,4 +1,4 @@
-name: Nightly Documents Update
+name: Auto Documents Update
 
 on:
   push: 
@@ -26,18 +26,13 @@ jobs:
         uses: webfactory/ssh-agent@v0.5.4
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-      - name: Init Git & Set User
-        run: |
-          git init
-          git config user.email "jenkinzhang@outlook.com"
-          git config user.name "halajun"
       - name: Git Add & Commit
         run: |
           git add html
           git commit -m "nightly or push update on `date +'%Y-%m-%d'`"
       - name: Add Remote & Force Push
         run: |
-          git remote add origin git@github.com:smarc-project/smarc-project.github.io.git
+          git remote set-url origin git@github.com:smarc-project/smarc-project.github.io.git
           git push -f origin master
 
   
