@@ -4,11 +4,11 @@ on:
   push: 
   schedule:
     # schedule on nighly run at 00:00 local Swedish time (23:00 UTC)
-    - cron: '02 23 * * *'
+    - cron: '01 23 * * *'
 
 jobs:
 
-  make_html:
+  update_html:
       runs-on: ubuntu-latest
       steps:
       - name: Checkout Repository Content
@@ -22,26 +22,10 @@ jobs:
         run: pip install sphinx sphinx_rtd_theme m2r mistune==0.8.4
       - name: Build Files
         run: make html
-      - name: Upload Artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: folder_html
-          path: html
-          retention-days: 1
-
-  publish_html:
-      needs: make_html
-      runs-on: ubuntu-latest
-      steps:
       - name: Get Access Permit
         uses: webfactory/ssh-agent@v0.5.4
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-      - name: Download Artifacts from Job "make_html"
-        uses: actions/download-artifact@v2
-        with:
-          name: folder_html
-          path: ./
       - name: Init Git & Set User
         run: |
           git init
@@ -49,7 +33,7 @@ jobs:
           git config user.name "halajun"
       - name: Git Add & Commit
         run: |
-          git add .
+          git add html
           git commit -m "nightly or push update on `date +'%Y-%m-%d'`"
       - name: Add Remote & Force Push
         run: |
