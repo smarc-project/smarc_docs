@@ -28,7 +28,7 @@ jobs:
           cache-name: cache-built-files
         with:
           # npm cache files are stored in `~/.npm` on Linux/macOS
-          path: ~/.html
+          path: html
           key: ${{ runner.os }}-build-${{ env.cache-name }}
 
   publish_html:
@@ -46,7 +46,7 @@ jobs:
           git config user.name "halajun"
       - name: Git Add & Commit
         run: |
-          git add ~/.html
+          git add html
           git commit -m "nightly or push update on `date +'%Y-%m-%d'`"
       - name: Add Remote & Force Push
         run: |
