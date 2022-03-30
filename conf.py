@@ -19,7 +19,8 @@
 import os
 import urllib
 
-external_urls = {"rosinstall": "https://raw.githubusercontent.com/smarc-project/rosinstall/master/README.md",
+external_urls = {
+                 "rosinstall": "https://raw.githubusercontent.com/smarc-project/rosinstall/master/README.md",
                  "smarc_docs": "https://raw.githubusercontent.com/smarc-project/smarc_docs/master/README.md",
                  "uavcan_ros_bridge": "https://raw.githubusercontent.com/smarc-project/uavcan_ros_bridge/noetic-devel/README.md",
                  "imc_ros_bridge": "https://raw.githubusercontent.com/smarc-project/imc_ros_bridge/noetic-devel/README.md",
@@ -36,18 +37,18 @@ external_urls = {"rosinstall": "https://raw.githubusercontent.com/smarc-project/
                  "roswasm_suite": "https://raw.githubusercontent.com/smarc-project/roswasm_suite/master/README.md",
                  "sbg_ros_driver": "https://raw.githubusercontent.com/smarc-project/sbg_ros_driver/noetic-devel/README.md",
                  "stim300": "https://raw.githubusercontent.com/smarc-project/stim300/noetic-devel/README.md",
-
-                 "lolo_common": "https://raw.githubusercontent.com/smarc-project/lolo_common/noetic-devel/README.md",
-                 "sam_common": "https://raw.githubusercontent.com/smarc-project/sam_common/noetic-devel/README.md",
-                 "smarc_releases": "https://raw.githubusercontent.com/smarc-project/smarc_releases/noetic-devel/README.md",
-                 "smarc_desktop": "https://raw.githubusercontent.com/smarc-project/smarc_desktop/noetic-devel/README.md",
                  "stonefish_ros": "https://raw.githubusercontent.com/smarc-project/stonefish_ros/noetic-devel/README.md"
 
+                #  "lolo_common": "https://raw.githubusercontent.com/smarc-project/lolo_common/noetic-devel/README.md",
+                #  "sam_common": "https://raw.githubusercontent.com/smarc-project/sam_common/noetic-devel/README.md",
+                #  "smarc_releases": "https://raw.githubusercontent.com/smarc-project/smarc_releases/noetic-devel/README.md",
+                #  "smarc_desktop": "https://raw.githubusercontent.com/smarc-project/smarc_desktop/noetic-devel/README.md",
 
-                #  "smarc_simulations": "https://raw.githubusercontent.com/smarc-project/smarc_simulations/master/README.md",
-                #  "roslaunch_monitor": "https://raw.githubusercontent.com/nilsbore/roslaunch_monitor/master/README.md",
-                # "roslaunch_monitor": "https://raw.githubusercontent.com/nilsbore/sam_stonefish_sim/master/README.md"
-                 }
+                 #  "smarc_simulations": "https://raw.githubusercontent.com/smarc-project/smarc_simulations/master/README.md",
+                 #  "roslaunch_monitor": "https://raw.githubusercontent.com/nilsbore/roslaunch_monitor/master/README.md",
+                 # "roslaunch_monitor": "https://raw.githubusercontent.com/nilsbore/sam_stonefish_sim/master/README.md"
+
+                 } 
 
 if not os.path.exists("external"):
     os.makedirs("external")
