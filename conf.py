@@ -24,6 +24,25 @@ external_urls = {"rosinstall": "https://raw.githubusercontent.com/smarc-project/
                  "uavcan_ros_bridge": "https://raw.githubusercontent.com/smarc-project/uavcan_ros_bridge/noetic-devel/README.md",
                  "imc_ros_bridge": "https://raw.githubusercontent.com/smarc-project/imc_ros_bridge/noetic-devel/README.md",
                  "bathymetric_slam": "https://raw.githubusercontent.com/smarc-project/bathymetric_slam/master/README.md",
+                 "smarc_stonefish_sims": "https://raw.githubusercontent.com/smarc-project/smarc_stonefish_sims/noetic-devel/README.md",
+                 "smarc_controllers": "https://raw.githubusercontent.com/smarc-project/smarc_controllers/noetic-devel/README.md",
+                 "stonefish_ros": "https://raw.githubusercontent.com/smarc-project/stonefish_ros/noetic-devel/README.md",
+                 "smarc_missions": "https://raw.githubusercontent.com/smarc-project/smarc_missions/noetic-devel/README.md",
+                 "smarc_utils": "https://raw.githubusercontent.com/smarc-project/smarc_utils/noetic-devel/README.md",
+                 "smarc_navigation": "https://raw.githubusercontent.com/smarc-project/smarc_navigation/noetic-devel/README.md",
+                 "smarc_msgs": "https://raw.githubusercontent.com/smarc-project/smarc_msgs/noetic-devel/README.md",
+                 "smarc_base": "https://raw.githubusercontent.com/smarc-project/smarc_base/noetic-devel/README.md",
+                 "sam_webgui": "https://raw.githubusercontent.com/smarc-project/sam_webgui/master/README.md",
+                 "lolo_webgui": "https://raw.githubusercontent.com/smarc-project/lolo_webgui/master/README.md",
+                 "roswasm_suite": "https://raw.githubusercontent.com/smarc-project/roswasm_suite/master/README.md",
+                 "sbg_ros_driver": "https://raw.githubusercontent.com/smarc-project/sbg_ros_driver/noetic-devel/README.md",
+                 "stim300": "https://raw.githubusercontent.com/smarc-project/stim300/noetic-devel/README.md"
+
+                #  "lolo_common": "https://raw.githubusercontent.com/smarc-project/lolo_common/noetic-devel/README.md",
+                #  "sam_common": "https://raw.githubusercontent.com/smarc-project/sam_common/noetic-devel/README.md",
+                #  "smarc_releases": "https://raw.githubusercontent.com/smarc-project/smarc_releases/noetic-devel/README.md",
+                #  "smarc_desktop": "https://raw.githubusercontent.com/smarc-project/smarc_desktop/noetic-devel/README.md",
+
                 #  "smarc_simulations": "https://raw.githubusercontent.com/smarc-project/smarc_simulations/master/README.md",
                 #  "roslaunch_monitor": "https://raw.githubusercontent.com/nilsbore/roslaunch_monitor/master/README.md",
                 # "roslaunch_monitor": "https://raw.githubusercontent.com/nilsbore/sam_stonefish_sim/master/README.md"
