@@ -33,11 +33,17 @@ external_urls = {
                  "smarc_msgs": "https://raw.githubusercontent.com/smarc-project/smarc_msgs/noetic-devel/README.md",
                  "smarc_base": "https://raw.githubusercontent.com/smarc-project/smarc_base/noetic-devel/README.md",
                  "sam_webgui": "https://raw.githubusercontent.com/smarc-project/sam_webgui/master/README.md",
+                 "sam_common": "https://raw.githubusercontent.com/smarc-project/sam_common/noetic-devel/README.md",
                  "lolo_webgui": "https://raw.githubusercontent.com/smarc-project/lolo_webgui/master/README.md",
+                 "lolo_common": "https://raw.githubusercontent.com/smarc-project/lolo_common/noetic-devel/README.md",
                  "roswasm_suite": "https://raw.githubusercontent.com/smarc-project/roswasm_suite/master/README.md",
                  "sbg_ros_driver": "https://raw.githubusercontent.com/smarc-project/sbg_ros_driver/noetic-devel/README.md",
                  "stim300": "https://raw.githubusercontent.com/smarc-project/stim300/noetic-devel/README.md",
-                 "stonefish_ros": "https://raw.githubusercontent.com/smarc-project/stonefish_ros/noetic-devel/README.md"
+                 "stonefish_ros": "https://raw.githubusercontent.com/smarc-project/stonefish_ros/noetic-devel/README.md",
+                 "smarc_desktop": "https://raw.githubusercontent.com/smarc-project/smarc_desktop/noetic-devel/README.md",
+                 "smarc_base": "https://raw.githubusercontent.com/smarc-project/smarc_base/noetic-devel/README.md",
+                 "smarc_releases": "https://raw.githubusercontent.com/smarc-project/smarc_releases/noetic-devel/README.md",
+                 "test-ros-release-action": "https://raw.githubusercontent.com/smarc-project/test-ros-release-action/noetic-devel/README.md"
 
                 #  "lolo_common": "https://raw.githubusercontent.com/smarc-project/lolo_common/noetic-devel/README.md",
                 #  "sam_common": "https://raw.githubusercontent.com/smarc-project/sam_common/noetic-devel/README.md",
